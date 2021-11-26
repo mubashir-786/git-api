@@ -1,15 +1,31 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 50%;
     margin: auto;
+    max-height: 315px;
     text-align: center;
     background-color: white;
+    border: 5px solid black;
+    padding-bottom: 20px;
   }
   
   .title {
     color: grey;
     font-size: 18px;
   }
+  #pic{
+    width: 32%;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    top: -100px;
+    left: 210px;
+    border: 5px black solid;
+    
+    /* padding: 3px; */
+  }
+
+  
   
   button {
     border: none;
@@ -32,6 +48,7 @@
   
   body{
       background-image: url(./adrian-infernus-GLf7bAwCdYg-unsplash.jpg);
+      
       background-repeat: no-repeat;
       background-size: 100%;
       font-family: sans-serif;
@@ -58,4 +75,41 @@
   .cnt{
     text-align: center;
     margin-bottom: 40px;
+  }
+  #name{
+    position: relative;
+    bottom: 100px;
+  }
+  #bio{
+    position: relative;
+    bottom: 100px;
+  }
+  #rp{
+    position: relative;
+    bottom: 100px;
+  }
+  #fl{
+    position: relative;
+    bottom: 100px;
+  }
+  #log{
+    position: relative;
+    bottom: 80px;
+  }
+  @media screen and (min-width:350px) and (max-width:415px) {
+    .card{
+      max-width: 90%;
+
+    }
+    #pic{
+     
+    left: 84px;
+    top: -79px;
+    width: 45%;
+
+    }
+    #name{
+      bottom: 85px;
+    }
+    
   }
